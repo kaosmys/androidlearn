@@ -4,13 +4,58 @@
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="14"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
         <activity android:name="MyActivity"
                   android:label="@string/app_name">
+<!--            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".MyActivity2"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.example.usingbroadcastreceiver.MainActivityOnbroadcast">
+<!--            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>-->
+        </activity>
+
+        <activity android:name="com.example.com.example.callinapps.MainActivityCallinApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name="com.example.IntentFilter.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.example.IntentFilter.MyBrowserActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <!--支持2种呼喊机制，用action常量或者直接用自定义的action名称，在intent中定义的 -->
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="com.example.IntentFilter.Mybrowser" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.usingbroadcastreceiver.BootupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+
     </application>
 </manifest>

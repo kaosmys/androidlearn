@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AndroidProDiv</string>
+    <string name="headline">我爱雷冠华</string>
+    <string name="returninfo">返回</string>
 </resources>

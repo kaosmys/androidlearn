@@ -7,7 +7,21 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World, MyActivity"
+            android:text="i love leiguanhua"
             />
+    <Button android:id="@+id/button1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="press on me"
+            android:onClick="onCLick"
+            />
+    <Button android:id="@+id/button2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="press on me 2"/>
+    <Button android:id="@+id/buttononobj"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="press on me 3"/>
 </LinearLayout>
 
