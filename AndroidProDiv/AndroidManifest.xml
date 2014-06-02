@@ -5,6 +5,7 @@
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="14"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
         <activity android:name="MyActivity"
@@ -25,16 +26,16 @@
         </activity>
 
         <activity android:name="com.example.com.example.callinapps.MainActivityCallinApp">
-            <intent-filter>
+<!--            <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name="com.example.IntentFilter.MainActivity">
-            <intent-filter>
+<!--            <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+            </intent-filter>-->
         </activity>
 
 
@@ -46,6 +47,42 @@
                 <action android:name="com.example.IntentFilter.Mybrowser" />
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.UItest.ButtonActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.UItest.RatioButton">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.UItest.WebviewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.UItest.TimePicker">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.UItest.TimepickerAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.UItest.RelativeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 

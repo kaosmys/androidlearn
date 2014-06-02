@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button android:id="@+id/button_test_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_test_1"
+            android:onClick="onClick"/>
+    <Button android:id="@+id/button_test_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_test_2"
+            android:onClick=""/>
+    <Button android:id="@+id/button_test_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_test_3"/>
+    <Button android:id="@+id/button_test_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_test_4"
+            android:onClick="onClick"/>
+    <Button android:id="@+id/button_test_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_test_5"
+            android:onClick="onToggle"
+            />
+    <TextView android:id="@+id/txtbuttonmain"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="please input sth"/>
+    <AutoCompleteTextView android:id="@+id/autotxt"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"/>
+
+</LinearLayout>

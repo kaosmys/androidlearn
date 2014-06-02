@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:id="@+id/lbllcomments"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="hello android!"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+    <FrameLayout android:id="@+id/framelayout"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/lbllcomments"
+                 android:layout_below="@+id/lbllcomments"
+                 android:layout_centerHorizontal="true">
+               <ImageView android:src="@drawable/buttonplay"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:tag="1"/>
+               <ImageView android:src="@drawable/buttonpause"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:tag="2"
+                          android:visibility="invisible"/>
+               <ImageView android:src="@drawable/buttonprevious"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:tag="3"
+                          android:visibility="invisible"/>
+    </FrameLayout>
+
+     <Button android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:text="Next"
+             android:onClick="btnClick1"/>
+</RelativeLayout>

@@ -3,4 +3,9 @@
     <string name="app_name">AndroidProDiv</string>
     <string name="headline">我爱雷冠华</string>
     <string name="returninfo">返回</string>
+    <string name="button_test_1">button_test_1</string>
+    <string name="button_test_2">button_test_2</string>
+    <string name="button_test_3">button_test_3</string>
+    <string name="button_test_4">button_test_4</string>
+    <string name="button_test_5">button_test_5</string>
 </resources>
