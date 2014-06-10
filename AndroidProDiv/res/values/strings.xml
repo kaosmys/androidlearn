@@ -8,4 +8,5 @@
     <string name="button_test_3">button_test_3</string>
     <string name="button_test_4">button_test_4</string>
     <string name="button_test_5">button_test_5</string>
+    <string name="menu_settings">Setting</string>
 </resources>
